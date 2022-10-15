@@ -1,6 +1,10 @@
+
+<!-- View a list of his or her diary entries.
+View the content of an entry.
+Add and modify an entry. -->
+
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <title></title>
@@ -10,11 +14,46 @@
 
   <link href="diary.css" rel="stylesheet">
 </head>
-
 <body>
+  <section id="mainsection">
 
-  <p>Hello, world!</p>
 
+    <div class="profile">
+      <p class="dropbtn"><img src="images/accounticon.png" alt="myimg">Account</p>
+      <div class="profile-content">
+
+         <a href="myprofile.html"><img src="images/accounticon.png" alt=""> My Profile</a>
+        <a href="#"><img src="images/settingicon.png" alt=""> Settings</a>
+        <a href="home.html"> Logout</a>
+      </div>
+    </div>
+    
+
+      <div class="maindiv">
+        <div>
+          <form id="entryform" method="POST">
+            <input type="text" placeholder="insert" id="addnew">
+            <input type="submit" value="add" id="submit">
+          </form>
+
+        </div>
+        <ul>
+          <li>
+            <p>Diary entry title</p>
+            <label>date entered</label>
+            <button>Edit</button>
+            <button>delete</button>
+          </li>
+          <li>
+            <p>ed a project by james to work on my diary. Very excited since thought it ill leran more.</p>
+            <label>date entered</label>
+            <button>Edit</button>
+            <button>delete</button>
+          </li>
+        </ul>
+      </div>
+      
+</section> 
   <script src="diary.js"></script>
 </body>
 

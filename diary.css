@@ -1,0 +1,247 @@
+:root{
+	--mainColor:#eaeaea;
+	--secondaryColor:#fff;
+	--borderColor:#c1c1c1;
+	--mainText:black ;
+	--secondaryText:#4b5156;
+	--themeDotBorder:#24292e ;
+	--previewBg:rgb(251, 249, 243, 0.8);
+	--previewShadow:#f0ead6;
+    --buttonColor: orange;
+    --formMargin:50px;
+    --formBackground: #C1E1C1;
+    --fontFamily: 'Times New Roman', serif;
+    
+   
+    
+}
+
+body{
+    background-color: var(--previewBg);
+}
+
+
+/* registration form */
+.registrationForm{
+    text-align:center ;
+    margin-top: var(--formMargin)
+    /* color: var(--buttonColor) */
+}
+
+
+/* input fields while typing*/
+input:focus {
+    background-color: #fff;
+    
+}
+
+/*form */
+.form{
+    text-align:center;
+    font-family: var(--fontFamily);
+}
+
+
+/* form  submit button*/
+button{
+    border:none; 
+    background-color:var(--buttonColor);
+    height:20px;
+    width:50px;
+}
+
+button:hover{
+    background-color: blue;
+    color:white;  
+}
+
+
+/*diary heading*/
+.heading{
+font-weight: bold;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+padding-top: 30px;
+padding-left: 30px;
+font-style: normal;
+font-size: x-large;
+background-color: var(--mainColor);
+width:150px;
+box-shadow: 5px 10px 10px grey;
+}
+
+.heading img{
+    height:30px;
+}
+
+
+
+
+
+/*the diary entries.*/
+.maindiv{
+    margin:10vh auto auto;
+    text-align: center;
+    background-color:var(--previewBg) ;
+}
+
+
+
+/*diary  entries list*/
+ul li{
+   
+    padding-bottom: 20px;
+    padding-left: 20px;
+    display:block;
+    list-style: none;
+    background-color:var(--borderColor);
+    box-shadow: 5px 10px 10px  #888888;
+
+}
+
+
+/*diary ul*/
+ul{
+   display:inline-block;
+   
+}
+
+
+/*adding new item in diary, the input field should icrease on focus*/
+#addnew:focus {
+    background-color:white;
+    color:black;
+    width: 500px; 
+    height: 100px;   
+    margin:3px 12px;
+}
+#submit:hover{
+    background-color: red;
+    color:white;
+    border:none;
+}
+
+
+#mainsection{
+    display:flex;  
+}
+
+
+/*user account profile*/
+/*user profile*/
+.profile{
+    display:inline;
+
+}
+
+/*profile heading*/
+.profile p{
+
+    font-weight: bold;
+    width:100px;
+    background-color:darkseagreen;
+    box-shadow: 5px 10px 10px  #888888;
+}
+
+
+
+/**/
+.profile p:hover{
+    background-color:white;
+    color:orangered;
+    font-weight: bold;
+}
+
+
+.profile-content {
+    font-weight: bold;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 5px 10px 10px  #888888;
+    width:200px;
+    
+   
+  }
+
+  .profile-content a {
+    color:black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid grey;
+
+
+  }
+
+  .profile-content a:hover {background-color: lightblue; color:blue}
+
+.profile:hover .profile-content {display: block;}
+
+
+.updateprofile{
+    height:30px;
+    width:100px;
+    background-color: blue;
+    color:white;
+    border-radius: 5px;
+}
+
+.homepage{
+    background: radial-gradient(343px at 46.3% 47.5%, rgb(242, 242, 242) 0%, rgb(241, 241, 241) 72.9%);
+    display:flex;
+    height:70px;
+    text-align: center;
+    padding-left: 10px;
+    
+}
+
+.loginlink{
+    color:red;
+    
+    right:0;
+    display:flex;
+    position:absolute;
+    right:30px
+}
+
+.loginlink a{
+   text-decoration: none;
+   font-weight: bolder;
+   background-color:azure;
+   box-shadow: 5px 10px 10px  #888888;
+}
+
+.homepage img{
+    height:40px;
+    left: 30px;
+}
+
+.homepage i {
+    color:blue;
+    font-size: larger;
+    font-weight: bolder;
+ 
+}
+
+
+.homeBody{
+   color:white;
+   padding-top: 200px;
+   justify-content: center;
+   text-align: center;
+    
+}
+
+.homeBody a{
+    text-decoration:none;
+    color:red;
+    
+    
+
+}
+
+.homeBody a:hover{
+    color:blue;
+    background-color:white;
+}
+
